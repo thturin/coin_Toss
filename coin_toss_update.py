@@ -11,8 +11,9 @@ countdown clock
 add seconds to the countdown clock when you get a coin
 WHAT IS THE PROBLEM ONCE YOU DO THE COUNTDOWN CLOCK CORRECTLY? ---> THE GAME ENDS AT THE INITIAL TIME GIVEN FOR TIME_UP
 
-have the coins move
-
+have the coins move <--- with the countdown clock created, the game because very easy because everytime you get a coin,
+the clock increases by 3 seconds. find a way to make it harder to get the coins. You can make the actor go slower
+Maybe change up the functionality of the keyboard clicks (left if right and right is left etc.) or have the coin move?
 """
 
 import pgzrun, random, pygame
