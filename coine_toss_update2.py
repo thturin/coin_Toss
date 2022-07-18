@@ -57,19 +57,19 @@ def time_up():
     global game_over
     game_over = True
 
+def update_time_left():
+    global time_left
+    if time_left:
+        if coin_collected
+        time_left -= 1
+    else:
+        time_up()
+
+clock.schedule_interval(update_time_left,1.0)
 
 def update(): #built in pygame zero function. Once you've defined it, pygame zero will run it automatically
     global score
     global time_left
-    global timer2, timer2_check
-    timer2_check+=1
-
-    if timer2_check%60==0: #1 second has passed
-        #subtract 1 from our countdown time_left var
-        time_left-=1
-        timer2+=1
-        #print(" time : {}".format(timer2))
-       # print(time_left)
 
     if keyboard.left:
         fox.x -= 2
@@ -86,11 +86,6 @@ def update(): #built in pygame zero function. Once you've defined it, pygame zer
         score+=10
         place_coin() #place coin somwhere
         time_left +=3
-
-    clock.unschedule(time_up)
-    clock.schedule(time_up,time_left)
-
-
 
 """
 the clock.schedule(callback, delay) <- the delay variable will not be changed since when running this code, it will be called and put into memory initially with original time_up value. 
